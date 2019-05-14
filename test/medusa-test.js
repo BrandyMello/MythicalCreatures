@@ -54,7 +54,7 @@ describe('Medusa', function() {
 
   it('should unstone the the first victim and stone the 4th coming in', function() {
     // create medusa
-var medusa = new Medusa('Mia');
+    var medusa = new Medusa('Mia');
     var victim1 = new Person('Brandy');
     var victim2 = new Person('Abigail');
     var victim3 = new Person('Ethan');

@@ -71,6 +71,8 @@ describe('Werewolf', function() {
     
   });
 
+  //Do victim tests below??????
+
   it('should be able to eat(victim) once hungry', function() {
     var werewolf = new Werewolf('Annie', 'Turing');
     var victim = new Victim('Brandy');

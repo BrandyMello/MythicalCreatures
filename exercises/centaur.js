@@ -12,15 +12,20 @@ class Centaur {
 
   shoot() {
     this.countAction();
-    if (this.cranky === true) {
+    if (this.cranky === true || this.layingDown === true) {
       return 'NO!'
+    } else {
+      return 'Twang!!!';
     }
-    return 'Twang!!!';
   }
 
   run() {
-    this.countAction();
-    return 'Clop clop clop clop!!!'  
+    if (this.layingDown === true) {
+      return 'NO!'
+    } else {
+     this.countAction();
+    return 'Clop clop clop clop!!!' 
+    }  
   }
 
   countAction() {
@@ -33,6 +38,9 @@ class Centaur {
   sleep() {
     if (this.standing === true) {
       return 'NO!';
+    } else {
+      this.cranky = false;
+      return 'ZZZZ';
     }
   }
 
@@ -44,6 +52,18 @@ class Centaur {
   standUp() {
     this.standing = true;
     this.layingDown = false;
+    this.counter = 0;
+  }
+
+  drinkPotion() {
+    if (this.cranky === false) {
+      this.cranky = true;
+    } else {
+      this.cranky = false;
+    }
+    if (this.layingDown = true) {
+      return 'Not while I\'m laying down!'
+    } 
   }
 }
 

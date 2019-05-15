@@ -3,19 +3,60 @@ class Medusa {
     this.name = name;
     this.statues = [];
   }
-  stare(victim) {
-    // console.log(victim);
-    this.statues.push(victim);
-    victim.stoned = true;
-    if (this.statues.length > 3) {
+
+  stare(killed) {
+      this.statues.push(killed);
+      killed.stoned = true;
+      if (this.statues.length > 3) {
       this.statues[0].stoned = false;
-      this.statues.shift(victim);
-      this.statues[2].stoned = true;
+      this.statues.shift();
     }
   }
 }
 
 module.exports = Medusa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Medusa {
+//   constructor(name) {
+//     this.name = name;
+//     this.statues = [];
+//   }
+//   stare(victim) {
+//     // console.log(victim);
+//     this.statues.push(victim);
+//     victim.stoned = true;
+//     if (this.statues.length > 3) {
+//       this.statues[0].stoned = false;
+//       this.statues.shift(victim);
+//       this.statues[2].stoned = true;
+//     }
+//   }
+// }
+
+// module.exports = Medusa
 
 
 

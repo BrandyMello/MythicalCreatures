@@ -1,29 +1,57 @@
-class Wizard {
 
-  constructor(object) {
-    this.name = object.name;
-    this.isRested = true;
-    this.counter = 0;
-    this.bearded = true;
-    if (object.bearded === false) {
-      this.bearded = false;
-    }
-  }
-  incantation(spell) {
-    return spell.toUpperCase();
-  }
-  cast() {
-    this.counter++;
-    if (this.counter >= 3){
-      this.isRested = false;
-      return "I SHALL NOT CAST!"
-    } else {
-      return 'MAGIC BULLET';
-    }
-  }
-}
 
-module.exports = Wizard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Wizard {
+
+//   constructor(object) {
+//     this.name = object.name;
+//     this.isRested = true;
+//     this.counter = 0;
+//     this.bearded = true;
+//     if (object.bearded === false) {
+//       this.bearded = false;
+//     }
+//   }
+//   incantation(spell) {
+//     return spell.toUpperCase();
+//   }
+//   cast() {
+//     this.counter++;
+//     if (this.counter >= 3){
+//       this.isRested = false;
+//       return "I SHALL NOT CAST!"
+//     } else {
+//       return 'MAGIC BULLET';
+//     }
+//   }
+// }
+
+// module.exports = Wizard;
 
 
 

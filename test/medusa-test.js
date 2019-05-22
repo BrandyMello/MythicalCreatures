@@ -37,7 +37,7 @@ describe('Medusa', function() {
 
   });
 
-  it('should only be able to have three victims as a statue', function() {
+  it.skip('should only be able to have three victims as a statue', function() {
     var medusa = new Medusa('Meeka');
     var victim1 = new Person('Lousia');
     var victim2 = new Person('Bree');
@@ -52,7 +52,7 @@ describe('Medusa', function() {
     assert.equal(medusa.statues.length, 3);
   });
 
-  it('should unstone the the first victim and stone the 4th coming in', function() {
+  it.skip('should unstone the the first victim and stone the 4th coming in', function() {
     // create medusa
     var medusa = new Medusa('Mia');
     var victim1 = new Person('Brandy');
@@ -87,7 +87,7 @@ describe('Person', function() {
     assert.equal(person.name, 'Steve');
   });
 
-  it('should be stoned after looking into Medusas eyes', function() {
+  it.skip('should be stoned after looking into Medusas eyes', function() {
     var medusa = new Medusa('Brenna');
     var victim = new Person('Jhun');
 

@@ -1,20 +1,37 @@
 class Medusa {
+
   constructor(name) {
     this.name = name;
     this.statues = [];
   }
-
-  stare(killed) {
-      this.statues.push(killed);
-      killed.stoned = true;
-      if (this.statues.length > 3) {
-      this.statues[0].stoned = false;
-      this.statues.shift();
-    }
+  stare(victim){
+    console.log(victim);
+    this.statues.push(victim);
   }
 }
 
 module.exports = Medusa
+
+
+
+
+// class Medusa {
+//   constructor(name) {
+//     this.name = name;
+//     this.statues = [];
+//   }
+
+//   stare(killed) {
+//       this.statues.push(killed);
+//       killed.stoned = true;
+//       if (this.statues.length > 3) {
+//       this.statues[0].stoned = false;
+//       this.statues.shift();
+//     }
+//   }
+// }
+
+// module.exports = Medusa
 
 
 

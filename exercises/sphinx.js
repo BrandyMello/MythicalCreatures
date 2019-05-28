@@ -14,10 +14,11 @@ class Sphinx {
 
   attemptAnswer(attempt) {
     for (var i = 0; i < this.riddles.length; i++) {
-      if (this.riddles[0].answer === attempt && this.riddles[1].answer === attempt) {
-        this.riddles.pop();
-        return 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"Halfway, after that it\'s running out.\"???'
-    } if (this.riddles[i].answer === attempt) {
+    //   if (this.riddles[0].answer === attempt && this.riddles[1].answer === attempt) {
+    //     this.riddles.pop();
+    //     return 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"Halfway, after that it\'s running out.\"???'
+    // }
+     if (this.riddles[i].answer === attempt) {
         this.riddles.pop();
     } else {
         this.heroesEaten = 1;

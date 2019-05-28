@@ -37,12 +37,6 @@ module.exports = Fairy
 
 
 
-
-
-
-
-
-
 // class Fairy {
 //   constructor(name, dust, obj) {
 //     this.name = name;
